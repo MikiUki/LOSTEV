@@ -1,0 +1,92 @@
+#map {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  margin-right: 0;
+  height: 40vw;
+}
+
+html {
+  background-color: #b4240b;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #b4240b;
+  height: 100vh;
+}
+
+html {
+  /* To make use of full height of page*/
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 0;
+  background-color: #b4240b;
+}
+
+li {
+  float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ce2626;
+}
+
+.active {
+  background-color: #992d1a;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid #ce2626;
+  background-color: #ce2626;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+}
