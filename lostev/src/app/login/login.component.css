@@ -5,8 +5,9 @@
 }
 
 body {
+  text-align: center;
   background: #f6f5f7;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -45,8 +46,8 @@ a {
 
 button {
   border-radius: 20px;
-  border: 1px solid #ff4b2b;
-  background-color: #ff4b2b;
+  border: 1px solid #ff3714;
+  background-color: #ff3714;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
@@ -92,18 +93,26 @@ input {
   width: 100%;
 }
 
+main {
+  width: 100%;
+
+}
+
 .container {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
-  width: 768px;
-  max-width: 100%;
+  width: 758px;
   min-height: 480px;
-  margin-left: 30%;
-  margin-top: 10%;
+  text-align: center;
 
+}
+
+#container {
+  display: inline-block;
+  margin-top: 50px;
 }
 
 .form-container {
@@ -111,12 +120,14 @@ input {
   top: 0;
   height: 100%;
   transition: all 0.6s ease-in-out;
+  text-align: center;
 }
 
 .sign-in-container {
   left: 0;
   width: 50%;
   z-index: 2;
+  text-align: center;
 }
 
 .container.right-panel-active .sign-in-container {
@@ -128,6 +139,7 @@ input {
   width: 50%;
   opacity: 0;
   z-index: 1;
+  text-align: center;
 }
 
 .container.right-panel-active .sign-up-container {
@@ -169,8 +181,8 @@ input {
 
 .overlay {
   background: #ff416c;
-  background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
-  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  background: -webkit-linear-gradient(to right, #ff3714, #d14833);
+  background: linear-gradient(to right, #ff3714, #d14833);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -217,31 +229,4 @@ input {
 
 .container.right-panel-active .overlay-right {
   transform: translateX(20%);
-}
-
-
-
-footer {
-  background-color: #222;
-  color: #fff;
-  font-size: 14px;
-  bottom: 0;
-  position: fixed;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 999;
-}
-
-footer p {
-  margin: 10px 0;
-}
-
-footer i {
-  color: red;
-}
-
-footer a {
-  color: #3c97bf;
-  text-decoration: none;
 }
