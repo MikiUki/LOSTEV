@@ -1,0 +1,40 @@
+<div id="main" style="text-align: center;">
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>Create Account</h1>
+
+        <input type="text" name="name" placeholder="Name" [(ngModel)]="name" />
+        <input type="text" name="surname" placeholder="Surname" [(ngModel)]="surname" />
+        <input type="text" name="jmbg" placeholder=" Personal Identification Number" [(ngModel)]="jmbg" />
+        <input type="password" name="password" placeholder="Password" [(ngModel)]="password" />
+
+        <button (click)='signup()'>Sign Up</button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Sign in</h1>
+
+        <input type="text" name="log_jmbg" placeholder="Personal Identification Number" [(ngModel)]="log_jmbg" />
+
+        <input type="password" name="log_password" placeholder="Password" [(ngModel)]="log_password" />
+
+        <button (click)='login()'>Sign In</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Sign In</h1>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Greetings!</h1>
+          <p>Enter your personal details</p>
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
