@@ -2,34 +2,31 @@
   margin: 0;
   width: 100%;
   padding: 0;
-  margin-right: 0;
-  height: 40vw;
+  top: 0;
+  height: 81%;
 }
 
-html {
-  background-color: #b4240b;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-}
+
 
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   background-color: #b4240b;
   height: 100vh;
 }
 
-html {
-  /* To make use of full height of page*/
-  min-height: 100%;
+#around {
+  overflow: hidden;
   margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #b4240b;
+  height: 100vh;
 }
 
-body {
-  min-height: 100%;
-  margin: 0;
-}
+
 
 ul {
   list-style-type: none;

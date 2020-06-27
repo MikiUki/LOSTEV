@@ -1,35 +1,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div>
+<div id="around">
 
-  <ul style="font-family: Arial, Helvetica, sans-serif;">
-    <li>
-      <a routerLink="">Home</a>
-    </li>
-    <li><a href="#news">Profile</a></li>
+  <div>
 
-    <li style="float:right"><a
-        href="https://mail.google.com/mail/?view=cm&fs=1&to=uros.vujosevic@gmail.com&su=Contact LOSTEV">Support</a></li>
-  </ul>
+    <ul style="font-family: Arial, Helvetica, sans-serif;">
+      <li>
+        <a routerLink="">Home</a>
+      </li>
+      <li><a href="#news">Profile</a></li>
+
+      <li style="float:right"><a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=uros.vujosevic@gmail.com&su=Contact LOSTEV">Support</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <body>
+
+    <div id="map">
+
+      <google-map height=100% width=100% [center]=" center">
+        <map-marker #markerElem *ngFor="let marker of markers" [position]="marker.position" [label]="marker.label"
+          [title]="marker.title" [options]="marker.options" (mapClick)="openInfo(marker, marker.info, markerElem)">
+        </map-marker>
+        <map-info-window>
+          <div [innerHTML]="infoContent"></div>
+        </map-info-window>
+      </google-map>
+
+
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+      <button (click)="submit()">Submit a request</button>
+    </div>
+
+
+  </body>
 </div>
-
-
-<body>
-
-  <div id="map">
-
-    <google-map height=100% width=100% [center]=" center">
-      <map-marker #markerElem *ngFor="let marker of markers" [position]="marker.position" [label]="marker.label"
-        [title]="marker.title" [options]="marker.options" (mapClick)="openInfo(marker, marker.info, markerElem)">
-      </map-marker>
-      <map-info-window>
-        <div [innerHTML]="infoContent"></div>
-      </map-info-window>
-    </google-map>
-
-
-  </div>
-  <div style="text-align: center; margin-top: 10px;">
-    <button (click)="submit()">Submit a request</button>
-  </div>
-
-</body>
