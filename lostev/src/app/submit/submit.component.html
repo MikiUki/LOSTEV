@@ -1,0 +1,58 @@
+<div>
+
+  <ul style="font-family: Arial, Helvetica, sans-serif;">
+    <li>
+      <a routerLink="">Logout</a>
+    </li>
+
+    <li>
+      <a routerLink="/dispatcher">Main Map</a>
+    </li>
+
+    <li style="float:right"><a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=uros.vujosevic@gmail.com&su=Contact LOSTEV">Support</a>
+    </li>
+  </ul>
+</div>
+
+<div id="around">
+
+  <table class="container" *ngIf="done == false">
+    <thead>
+      <tr>
+        <th style="font-size: large;">
+          <h1>Events</h1>
+        </th>
+        <th style="font-size: large; ">
+          <h1 style="text-align: center;">Views</h1>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=" let marker of markers; let i=index">
+        <td id="event">
+          <div [innerHTML]="marker.info"></div>
+        </td>
+        <td (click)="this.respond(i,marker)" id="button" style="text-align: center;">Respond</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div *ngIf="empty == true && done == false" style="text-align: center;">
+    First responders sent to:
+    <div [innerHTML]="display_marker.info"></div>
+  </div>
+  <div *ngIf="done == true" class="done">
+    No new emergencies
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="text-align: center; margin-top: 20px;">
+      <button (click)="goback()">Go to Map</button>
+    </div>
+  </div>
+</div>

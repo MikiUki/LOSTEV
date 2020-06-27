@@ -7,10 +7,11 @@ import { AppComponent } from "./app.component";
 import { LoginComponent } from "./login/login.component";
 import { FormsModule } from "@angular/forms";
 import { MapComponent } from './map/map.component';
+import { SubmitComponent } from './submit/submit.component';
 
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, MapComponent],
+  declarations: [AppComponent, LoginComponent, MapComponent, SubmitComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, GoogleMapsModule],
   providers: [],
   bootstrap: [AppComponent],
