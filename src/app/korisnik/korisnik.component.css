@@ -1,0 +1,40 @@
+@import "../../assets/css/main.css";
+
+html,
+body {
+  overflow: auto;
+}
+
+#navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 0;
+  background-color: rgb(23, 22, 26);
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+.itemnavbar {
+  float: left;
+}
+
+.itemnavbar:last-child {
+  border-right: none;
+}
+
+.itemnavbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 0;
+}
+
+.itemnavbar a:hover:not(.active) {
+  background-color: rgb(73, 72, 78);
+}
