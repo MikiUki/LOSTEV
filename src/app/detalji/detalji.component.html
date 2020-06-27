@@ -1,37 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div>
 
-</head>
+  <ul style="font-family: Arial, Helvetica, sans-serif;">
+    <li>
+      <a routerLink="">Logout</a>
+    </li>
 
-<body >
-<div class="container">
-<h1>UNESITE BROJ POVREDJENIH,DODAJTE KOMENTAR</h1>
+    <li><a routerLink="/user">Back</a></li>
+
+    <li style="float:right"><a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=uros.vujosevic@gmail.com&su=Contact LOSTEV">Support</a>
+    </li>
+  </ul>
+</div>
+
 <form>
-  
-  <div class="form-group">
-    
-    <select class="form-control" >
-      <option><5</option>
-      <option>>5,<10</option>
-      <option>>10</option>
-    </select>
-  </div>  
-  <div class="checkbox">
-    DODAJTE KOMENTAR
-    
-  </div>
-<div class="form-group">
+  <table>
 
-<input type="textarea" >
-<br>
-</div>
+    <div *ngIf="type == 'fire'">
+      <tr>
+        fire
+      </tr>
+    </div>
 
-  <button type="submit" class="btn btn-info">ZATRAZI POMOC</button>
+  </table>
 </form>
-
-</div>
-</body>
-</html>

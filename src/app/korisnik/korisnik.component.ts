@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KorisnikComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  go(type: string) {
+    console.log("123");
+
+    localStorage.setItem('type', JSON.stringify(type));
+
+
+  }
 }

@@ -1,1 +1,42 @@
-@import "../../assets/css/main.css";
+html,
+body {
+  text-align: center;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 0;
+  background-color: rgb(32, 31, 36);
+}
+
+li {
+  float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(73, 72, 78);
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}

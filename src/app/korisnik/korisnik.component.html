@@ -22,6 +22,7 @@
         href="https://mail.google.com/mail/?view=cm&fs=1&to=uros.vujosevic@gmail.com&su=Contact LOSTEV">Support</a>
     </li>
   </ul>
+
 </div>
 
 <body id="top">
@@ -39,7 +40,7 @@
             <h3>Fire</h3>
             <p>Report a fire in your immediate vicinity or someone elses, number of people affected, elevation etc.</p>
             <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%;">Go</a>
+              style=" position: absolute; bottom: 15px; width: 87%;" (click)="go('fire')">Go</a>
           </div>
         </div>
 
@@ -52,7 +53,7 @@
             <p>Report floods in your immediate vicinity or someone elses, their scale etc.
             </p>
             <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%;">Go</a>
+              style=" position: absolute; bottom: 15px; width: 87%;" (click)="go('flood')">Go</a>
           </div>
         </div>
 
@@ -63,10 +64,10 @@
 
             <h3>Earthquake</h3>
 
-            <p>Report floods in your immediate vicinity or someone elses, their scale etc.</p>
+            <p>Report earthquakes and tremors in your immediate vicinity or someone elses, their scale etc.</p>
 
             <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%;">Go</a>
+              style=" position: absolute; bottom: 15px; width: 87%;" (click)="go('earth')">Go</a>
 
           </div>
         </div>
@@ -81,7 +82,7 @@
             <p>Report weather related emergencies, their scale, nature etc.</p>
 
             <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%;">Go</a>
+              style=" position: absolute; bottom: 15px; width: 87%;" (click)="go('weather')">Go</a>
 
           </div>
         </div>
@@ -93,7 +94,7 @@
             <h3>Health</h3>
             <p>Ask for emergency health-related assistance</p>
             <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%;">Go</a>
+              style=" position: absolute; bottom: 15px; width: 87%;" (click)="go('health')">Go</a>
           </div>
         </div>
 
@@ -104,7 +105,7 @@
             <h3>Security</h3>
             <p>Report an event in need of Police assistance, its type, nature etc.</p>
             <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%;">Go</a>
+              style=" position: absolute; bottom: 15px; width: 87%;" (click)="go('police')">Go</a>
           </div>
         </div>
 
@@ -115,7 +116,7 @@
             <h3>Other</h3>
             <p>Report an emergency not covered in the boxes above</p>
             <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%; ">Go</a>
+              style=" position: absolute; bottom: 15px; width: 87%; " (click)="go('other')">Go</a>
           </div>
         </div>
 
