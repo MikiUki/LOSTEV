@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   text-align: center;
-  background: #f6f5f7;
+  background: rgb(32, 31, 36);
   display: inline-block;
   justify-content: center;
   align-items: center;
@@ -46,8 +47,8 @@ a {
 
 button {
   border-radius: 20px;
-  border: 1px solid #ff3714;
-  background-color: #ff3714;
+  border: 1px solid rgb(32, 31, 36);
+  background-color: rgb(32, 31, 36);
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
@@ -95,6 +96,7 @@ input {
 
 main {
   width: 100%;
+  background-color: rgb(32, 31, 36);
 
 }
 
@@ -112,7 +114,7 @@ main {
 
 #container {
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .form-container {
@@ -180,9 +182,9 @@ main {
 }
 
 .overlay {
-  background: #ff416c;
-  background: -webkit-linear-gradient(to right, #ff3714, #d14833);
-  background: linear-gradient(to right, #ff3714, #d14833);
+  background: rgb(32, 31, 36);
+  background: -webkit-linear-gradient(to right, rgb(32, 31, 36), rgb(64, 56, 100));
+  background: linear-gradient(to right, rgb(32, 31, 36), rgb(71, 71, 109));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
