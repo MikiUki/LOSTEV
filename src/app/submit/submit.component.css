@@ -147,3 +147,19 @@ button.ghost {
   background-color: transparent;
   border-color: #ffffff;
 }
+
+#clickable {
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  transition: all .3s ease-out;
+}
+
+#clickable:hover {
+  background-color: #c2505f
+}
+
+#clickable:active {
+  background-color: #FB667A;
+  transform: scale(0.95);
+}
