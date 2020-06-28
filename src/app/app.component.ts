@@ -59,14 +59,14 @@ export class AppComponent {
       {
         name: "Uros",
         surname: "Vujosevic",
-        jmbg: "2001999710178",
-        password: "2001999710178",
+        jmbg: "123",
+        password: "uros123",
         tip: "dispatcher",
       },
       {
-        name: "Uros",
-        surname: "Vujosevic",
-        jmbg: "1507998710215",
+        name: "Milijan",
+        surname: "Bogdanovic",
+        jmbg: "milijan",
         password: "milijan123",
         tip: "user",
       }

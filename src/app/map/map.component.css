@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
 #map {
   margin: 0;
   width: 100%;
@@ -9,6 +11,7 @@
 
 
 body {
+  font-family: Montserrat;
   margin: 0;
   padding: 0;
   width: 100%;
