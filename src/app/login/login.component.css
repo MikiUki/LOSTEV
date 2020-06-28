@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import "../../assets/css/main.css";
 
 * {
   box-sizing: border-box;
@@ -6,16 +8,27 @@
 
 html,
 body {
-  text-align: center;
-  background: rgb(32, 31, 36);
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: "Montserrat", sans-serif;
-  height: 100vh;
-  margin: -20px 0 50px;
+
+  overflow: auto;
 }
+
+
+
+#title {
+  padding-top: 0%;
+  color: rgb(118, 118, 119);
+  font-weight: light;
+  font-family: 'Montserrat';
+  font-size: 75px;
+}
+
+#main {
+  text-align: center;
+  background-color: rgb(32, 31, 36);
+  height: 100%;
+  overflow: hidden;
+}
+
 
 h1 {
   font-weight: bold;
@@ -45,17 +58,28 @@ a {
   margin: 15px 0;
 }
 
-button {
+.button {
   border-radius: 20px;
-  border: 1px solid rgb(32, 31, 36);
-  background-color: rgb(32, 31, 36);
+  border: 1px solid #ffffff;
+  background-color: #797979;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
   padding: 12px 45px;
+  padding-top: 0;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #c2505f;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #c2505f;
 }
 
 button:active {
@@ -66,13 +90,17 @@ button:focus {
   outline: none;
 }
 
-button.ghost {
+.ghost_2 {
+  border-radius: 20px;
   background-color: transparent;
-  border-color: #ffffff;
+  border: 1px solid #ffffff;
+  display: inline-flex;
+  align-items: center;
 }
 
 form {
-  background-color: #ffffff;
+  font-family: 'open-sans', sans-serif;
+  background-color: rgb(46, 45, 54);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,35 +114,42 @@ form {
 
 
 
-input {
-  background-color: #eee;
+.input-text {
+  background-color: rgb(133, 133, 133);
+  color: #fff;
+  border-radius: 4px;
   border: none;
   padding: 12px 15px;
   margin: 8px 0;
   width: 100%;
 }
 
-main {
-  width: 100%;
-  background-color: rgb(32, 31, 36);
-
+.input-text::placeholder {
+  color: #fff;
 }
 
+
+
 .container {
-  background-color: #fff;
+  font-family: 'open-sans', sans-serif;
+  background-color: rgb(46, 45, 54);
   border-radius: 10px;
+  margin-bottom: 0;
+  top: -20px;
+  font-size: xx-large;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
   width: 758px;
-  min-height: 480px;
+  /* min-height:55%; */
+  min-height: 420px;
   text-align: center;
 
 }
 
 #container {
   display: inline-block;
-  margin-top: 100px;
+  margin-top: 3%;
 }
 
 .form-container {
