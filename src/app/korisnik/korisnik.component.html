@@ -35,89 +35,94 @@
 
         <div class="box" style="position: relative;">
 
-          <img src="../../assets/css/images/pic01.jpg" alt="" style="width: 100%;" />
-          <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
-            <h3>Fire</h3>
-            <p>Report a fire in your immediate vicinity or someone elses, number of people affected, elevation etc.</p>
-            <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%;" (click)="go('fire')">Go</a>
-          </div>
+          <a routerLink="/details" (click)="go('fire')" style="border: 0;">
+            <img src="../../assets/css/images/pic01.jpg" alt="" style="width: 100%;" />
+            <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
+              <h3>Fire</h3>
+              <p>Report a fire in your immediate vicinity or someone elses, number of people affected, elevation etc.
+              </p>
+            </div>
+          </a>
+
         </div>
 
-        <div class="box">
+        <div class="box" style="position: relative;">
 
-          <img src="../../assets/css/images/pic02.jpg" alt="" style="width: 100%;" />
+          <a routerLink="/details" (click)="go('flood')" style="border: 0;">
+            <img src="../../assets/css/images/pic02.jpg" alt="" style="width: 100%;" />
+            <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
+              <h3>Flood</h3>
+              <p>Report floods in your immediate vicinity or someone elses, their scale etc.
+              </p>
+            </div>
+          </a>
 
-          <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
-            <h3>Flood</h3>
-            <p>Report floods in your immediate vicinity or someone elses, their scale etc.
-            </p>
-            <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%;" (click)="go('flood')">Go</a>
-          </div>
         </div>
 
-        <div class="box">
+        <div class="box" style="position: relative;">
 
-          <img src="../../assets/css/images/pic03.jpg" alt="" style="width: 100%;" />
-          <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
+          <a routerLink="/details" (click)="go('earth')" style="border: 0;">
+            <img src="../../assets/css/images/pic03.jpg" alt="" style="width: 100%;" />
+            <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
+              <h3>Earthquake</h3>
+              <p>Report earthquakes and tremors in your immediate vicinity or someone elses, their scale etc.
+              </p>
+            </div>
+          </a>
 
-            <h3>Earthquake</h3>
-
-            <p>Report earthquakes and tremors in your immediate vicinity or someone elses, their scale etc.</p>
-
-            <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%;" (click)="go('earth')">Go</a>
-
-          </div>
         </div>
 
-        <div class="box">
+        <div class="box" style="position: relative;">
 
-          <img src="../../assets/css/images/pic04.jpg" alt="" style="width: 100%;" />
-          <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
+          <a routerLink="/details" (click)="go('weather')" style="border: 0;">
+            <img src="../../assets/css/images/pic04.jpg" alt="" style="width: 100%;" />
+            <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
+              <h3>Weather Emergency</h3>
+              <p>Report weather related emergencies, their scale, nature etc.
+              </p>
+            </div>
+          </a>
 
-            <h3>Foul Weather</h3>
-
-            <p>Report weather related emergencies, their scale, nature etc.</p>
-
-            <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%;" (click)="go('weather')">Go</a>
-
-          </div>
         </div>
 
-        <div class="box">
+        <div class="box" style="position: relative;">
 
-          <img src="../../assets/css/images/pic05.jpg" alt="" style="width: 100%;" />
-          <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
-            <h3>Health</h3>
-            <p>Ask for emergency health-related assistance</p>
-            <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%;" (click)="go('health')">Go</a>
-          </div>
+          <a routerLink="/details" (click)="go('health')" style="border: 0;">
+            <img src="../../assets/css/images/pic05.jpg" alt="" style="width: 100%;" />
+            <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
+              <h3>Health</h3>
+              <p>Ask for emergency health-related assistance
+              </p>
+            </div>
+          </a>
+
         </div>
 
-        <div class="box">
 
-          <img src="../../assets/css/images/pic06.jpg" alt="" style="width: 100%;" />
-          <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
-            <h3>Security</h3>
-            <p>Report an event in need of Police assistance, its type, nature etc.</p>
-            <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%;" (click)="go('police')">Go</a>
-          </div>
+        <div class="box" style="position: relative;">
+
+          <a routerLink="/details" (click)="go('security')" style="border: 0;">
+            <img src="../../assets/css/images/pic06.jpg" alt="" style="width: 100%;" />
+            <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
+              <h3>Security</h3>
+              <p>Report an event in need of Police assistance, its type, nature etc.
+              </p>
+            </div>
+          </a>
+
         </div>
 
-        <div class="box">
+        <div class="box" style="position: relative;">
 
-          <img src="../../assets/css/images/pic07.jpg" alt="" style="width: 100%;" />
-          <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
-            <h3>Other</h3>
-            <p>Report an emergency not covered in the boxes above</p>
-            <a routerLink="/detalji" class="button style2 fit" data-poptrox="youtube,800x400"
-              style=" position: absolute; bottom: 15px; width: 87%; " (click)="go('other')">Go</a>
-          </div>
+          <a routerLink="/details" (click)="go('other')" style="border: 0;">
+            <img src="../../assets/css/images/pic07.jpg" alt="" style="width: 100%;" />
+            <div class="inner" style="padding-bottom: 9%; padding-top: 4%;">
+              <h3>Other</h3>
+              <p>Report an emergency not covered in the boxes above
+              </p>
+            </div>
+          </a>
+
         </div>
 
 

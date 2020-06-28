@@ -9,14 +9,17 @@ import { Router } from '@angular/router';
 export class DetaljiComponent implements OnInit {
 
   type: string;
+  sent: boolean;
 
   constructor(private ruter: Router) { }
 
   ngOnInit(): void {
     this.type = JSON.parse(localStorage.getItem('type'));
-
+    this.sent = false;
   }
 
-
+  send() {
+    this.sent = true;
+  }
 
 }

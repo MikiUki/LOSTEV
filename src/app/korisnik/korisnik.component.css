@@ -42,4 +42,17 @@ body {
 
 .box {
   position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transform: scale(1);
+
+}
+
+.box:hover {
+  transition: transform 200ms ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+
+  transform: scale(1.05);
 }

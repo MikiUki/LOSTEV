@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: "dispatcher", component: MapComponent },
   { path: "submit", component: SubmitComponent },
   { path: "user", component: KorisnikComponent },
-  { path: "detalji", component: DetaljiComponent }
+  { path: "details", component: DetaljiComponent }
 
 ];
 
