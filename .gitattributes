@@ -1,1 +1,2 @@
-src/assets/css/* linguist-vendored
+special-vendored-path/* linguist-vendored
+src/assets/css linguist-vendored
