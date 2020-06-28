@@ -1,11 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 html,
 body {
   text-align: center;
   border: 0;
   padding: 0;
-  font-family: 'open-sans', sans-serif;
+  font-family: 'Montserrat';
   overflow: hidden;
   position: relative;
   background-color: #202024;
@@ -54,7 +55,7 @@ table {
 
 .donate-now {
   list-style-type: none;
-  margin: 25px 0 0 0;
+  margin: 29px;
   padding: 0;
   text-align: center;
 }
@@ -148,9 +149,8 @@ button.ghost {
 
 
 .wrapper {
-  width: 800px;
+  width: 700px;
   margin: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,9 +160,9 @@ button.ghost {
   position: relative;
   display: block;
 
-  height: 300px;
+  height: 250px;
   width: 100%;
-  box-shadow: 0 30px 40px rgba(196, 99, 144, 0.1);
+  box-shadow: 0 30px 40px rgba(116, 107, 111, 0.1);
   border-radius: 5px;
   overflow: hidden;
 }

@@ -1,40 +1,99 @@
-<div id="main" style="text-align: center; background-color: rgb(32, 31, 36); height: 100%;">
-  <div class="container" id="container">
-    <div class="form-container sign-up-container">
-      <form action="#">
-        <h1>Create Account</h1>
+<html>
 
-        <input type="text" name="name" placeholder="Name" [(ngModel)]="name" />
-        <input type="text" name="surname" placeholder="Surname" [(ngModel)]="surname" />
-        <input type="text" name="jmbg" placeholder=" Personal Identification Number" [(ngModel)]="jmbg" />
-        <input type="password" name="password" placeholder="Password" [(ngModel)]="password" />
+<body>
 
-        <button (click)='signup()'>Sign Up</button>
-      </form>
+
+
+
+  <div id="main">
+
+    <div id="title">
+      LOSTEV
     </div>
-    <div class="form-container sign-in-container">
-      <form action="#">
-        <h1>Sign in</h1>
 
-        <input type="text" name="log_jmbg" placeholder="Personal Identification Number" [(ngModel)]="log_jmbg" />
+    <div class="container" id="container">
 
-        <input type="password" name="log_password" placeholder="Password" [(ngModel)]="log_password" />
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1 style="color: #ffffff;">Create Account</h1>
 
-        <button (click)='login()'>Sign In</button>
-      </form>
-    </div>
-    <div class="overlay-container">
-      <div class="overlay">
-        <div class="overlay-panel overlay-left">
-          <h1>Sign In</h1>
-          <button class="ghost" id="signIn">Sign In</button>
-        </div>
-        <div class="overlay-panel overlay-right">
-          <h1>No account?</h1>
-          <p>Enter your personal details</p>
-          <button class="ghost" id="signUp">Sign Up</button>
+          <input type="text" name="name" placeholder="Name" [(ngModel)]="name" class="input-text" />
+          <input type="text" name="surname" placeholder="Surname" [(ngModel)]="surname" class="input-text" />
+          <input type="text" name="jmbg" placeholder=" Personal Identification Number" [(ngModel)]="jmbg"
+            class="input-text" />
+          <input type="password" name="password" placeholder="Password" [(ngModel)]="password" class="input-text" />
+
+          <button (click)='signup()' class="button" style="margin-top: 5px;">Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1 style="color: #ffffff;">Sign in</h1>
+
+          <input type="text" name="log_jmbg" placeholder="Personal Identification Number" [(ngModel)]="log_jmbg"
+            class="input-text" />
+
+          <input type="password" name="log_password" placeholder="Password" [(ngModel)]="log_password"
+            class="input-text" />
+          <button (click)='login()' class="button" style="margin-top: 20px;">Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Sign In</h1>
+            <br>
+            <button class="ghost_2" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>No account?</h1>
+            <p>Enter your personal details</p>
+            <button class="ghost_2" id="signUp">Sign Up</button>
+          </div>
         </div>
       </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br><br>
+
+
   </div>
-</div>
+
+
+
+  <footer id="footer" style="  display: block;">
+    <div class="inner">
+      <h2>Our vision</h2>
+      <p style="font-size: 1em;">Helping people in emergency situations by using the cutting-edge technologies of
+        today
+      </p>
+
+      <ul class="icons">
+        <li><a href="https://twitter.com/drdrazen?lang=en" class="icon fa-twitter"><span
+              class="label">Twitter</span></a>
+        </li>
+        <li><a href="https://www.facebook.com/predrag.kon" class="icon fa-facebook"><span
+              class="label">Facebook</span></a></li>
+        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=uros.vujosevic@gmail.com&su=Contact LOSTEV"
+            class="icon fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
+      <p class="copyright">&copy; LOSTEV | EU Horizons 2020 </p>
+    </div>
+  </footer>
+
+
+</body>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</html>
