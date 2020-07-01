@@ -57,17 +57,17 @@ export class AppComponent {
 
     let users = [
       {
-        name: "Uros",
-        surname: "Vujosevic",
+        name: "Dispecer",
+        surname: "Dispecercic",
         jmbg: "123",
-        password: "uros123",
+        password: "dispecer",
         tip: "dispatcher",
       },
       {
-        name: "Milijan",
-        surname: "Bogdanovic",
-        jmbg: "milijan",
-        password: "milijan123",
+        name: "User",
+        surname: "Usercic",
+        jmbg: "1234",
+        password: "user",
         tip: "user",
       }
     ]
